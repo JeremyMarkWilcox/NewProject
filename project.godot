@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="New"
+run/main_scene="uid://dp7ifnnwxbgj0"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Miscellaneous/icon.svg"
 
 [display]
 

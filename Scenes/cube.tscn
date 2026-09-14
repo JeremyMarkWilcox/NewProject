@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://7gu1t1kqjamk"]
 
+[ext_resource type="Script" uid="uid://qig0ey8dpkg2" path="res://Scripts/cube.gd" id="1_jbd7x"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ra2i3"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_iylpf"]
+[sub_resource type="PrismMesh" id="PrismMesh_j1tt0"]
 
 [node name="Cube" type="Area3D" unique_id=411078699]
+script = ExtResource("1_jbd7x")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1894753662]
 shape = SubResource("BoxShape3D_ra2i3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=131602205]
-mesh = SubResource("CapsuleMesh_iylpf")
+mesh = SubResource("PrismMesh_j1tt0")
